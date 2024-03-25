@@ -65,6 +65,15 @@
 		  fbq('track', 'PageView');
 		
 		document.querySelector('.btn').onclick = function() {
+			fbq('track', 'AddToCart', {
+				content_name: 'Really Fast Running Shoes', 
+				content_category: 'Apparel & Accessories > Shoes',
+				content_ids: ['1234'],
+				content_type: 'product',
+				value: 4.99,
+				currency: 'USD' 
+			  });
+			
 			window.open('https://wa.me/8615521476142')
 		}
 	</script>
